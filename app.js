@@ -1,4 +1,4 @@
-j// app.js
+// app.js
 const express = require('express');
 const morgan =require ('morgan')
 // Import user router (from routes folder)
@@ -11,6 +11,5 @@ app.use(logger)
 
 // Mount the router
 app.use('/users', userRouter); // this means all user routes start with /users
-// middleware to add error 404 
 
 module.exports = app; // Export the app
